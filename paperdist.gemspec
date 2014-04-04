@@ -20,6 +20,8 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "activesupport", ">= 3.0"
   spec.add_dependency "activerecord", ">= 3.0"
+  spec.add_dependency "paperclip"
+  spec.add_dependency "paperclip-webdav"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
