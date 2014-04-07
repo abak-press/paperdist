@@ -3,6 +3,8 @@ require 'paperdist/engine'
 require 'paperdist/interpolations'
 require 'paperdist/version'
 
+require 'ext/paperclip/webdav'
+
 module Paperdist
   mattr_accessor :config
 
@@ -11,3 +13,4 @@ module Paperdist
   autoload :NodeInformer, 'paperdist/node_informer'
   autoload :NodeSelector, 'paperdist/node_selector'
 end
+

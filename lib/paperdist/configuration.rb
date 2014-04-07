@@ -9,7 +9,6 @@ module Paperdist
 
     def initialize(*paths)
       paths.each { |p| load(p) }
-      webdav_server.tr!('%', active_node.to_s)
     end
 
     private
