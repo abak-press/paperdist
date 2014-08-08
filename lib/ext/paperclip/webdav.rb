@@ -8,7 +8,7 @@ module Paperclip
       def servers
         @webdav_servers ||= begin
           node = instance.node || Paperdist.config.active_node
-          [Server.new(url: Paperdist.config.webdav_server.tr(?%, node.to_s))]
+          [Server.new(url: Paperdist.config.webdav_server.gsub(/%/, node.to_s))]
         end
       end
     end
