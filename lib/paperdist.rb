@@ -2,9 +2,9 @@ require 'active_support/core_ext/module/attribute_accessors'
 require 'paperclip'
 require 'paperclip-webdav'
 
+require 'paperdist/version'
 require 'paperdist/engine'
 require 'paperdist/interpolations'
-require 'paperdist/version'
 
 require 'ext/paperclip/webdav'
 
