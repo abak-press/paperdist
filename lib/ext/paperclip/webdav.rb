@@ -1,5 +1,4 @@
 # coding: utf-8
-
 require 'paperclip/storage/webdav'
 
 module Paperclip
