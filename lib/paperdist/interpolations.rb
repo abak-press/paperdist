@@ -8,7 +8,7 @@ module Paperclip
     def public_url(attachment, style_name)
       system_asset_host = ActionController::Base.asset_host + '/system/'
       paperdist_url = Paperdist::NodeInformer.url(attachment.instance.node, system_asset_host)
-      attach_path = URI.encode(attachment.path(style_name))
+      attach_path = attachment.path(style_name)
 
       [paperdist_url, attach_path].join('/')
     end
