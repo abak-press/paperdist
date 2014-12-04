@@ -1,7 +1,9 @@
 
 #### [Current]
+ * 2014-12-04 [949981c](../../commit/949981c) - __(bibendi)__ generate public_url without URI.encode
 
-#### 
+#### v2.0.0
+ * 2014-12-04 [e7278b7](../../commit/e7278b7) - __(bibendi)__ Release 2.0.0
  * 2014-12-04 [27a7f60](../../commit/27a7f60) - __(bibendi)__ update gem apress-gems to 0.2.0
  * 2014-12-03 [b7d52fa](../../commit/b7d52fa) - __(bibendi)__ generate public_url without URI.join
  * 2014-12-03 [8ff2b08](../../commit/8ff2b08) - __(bibendi)__ update paperclip-webdav
