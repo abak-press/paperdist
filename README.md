@@ -1,6 +1,6 @@
 # Paperdist
 
-TODO: Write a gem description
+<a href="http://dolly.railsc.ru/projects/128/builds/latest/?ref=master"><img src="http://dolly.railsc.ru/badges/abak-press/paperdist/master" height="18"></a>
 
 ## Installation
 

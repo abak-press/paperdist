@@ -1,0 +1,9 @@
+development:
+  active_node: 0
+  webdav_server: 'http://foo%.localhost'
+  public_server: 'http://st%.localhost'
+
+production:
+  active_node: 11
+  webdav_server: 'http://foo%.example.com'
+  public_server: 'http://st%.example.com'
