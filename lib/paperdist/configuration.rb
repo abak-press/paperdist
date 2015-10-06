@@ -5,7 +5,7 @@ require 'yaml'
 module Paperdist
   class Configuration
     include ActiveSupport::Configurable
-    config_accessor :active_node, :webdav_server, :public_server
+    config_accessor :active_node, :webdav_server, :public_server, :alternate_public_server
 
     def initialize(*paths)
       paths.each { |p| load(p) }
