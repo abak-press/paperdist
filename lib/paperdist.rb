@@ -16,4 +16,3 @@ module Paperdist
   autoload :NodeInformer, 'paperdist/node_informer'
   autoload :NodeSelector, 'paperdist/node_selector'
 end
-

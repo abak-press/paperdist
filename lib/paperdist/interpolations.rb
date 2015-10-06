@@ -18,7 +18,7 @@ module Paperclip
     # of the actual extension.
     def extension(attachment, style_name)
       ((style = attachment.styles[style_name.to_s.to_sym]) && style.format) ||
-        File.extname(attachment.original_filename).gsub(/^\.+/, "")
+        File.extname(attachment.original_filename)[1..-1]
     end
   end
 end
