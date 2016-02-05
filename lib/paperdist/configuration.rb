@@ -14,7 +14,7 @@ module Paperdist
     private
     def load(path)
       if File.exists?(path)
-        c = YAML.load(File.read(path)).fetch(Rails.env.to_s)
+        c = YAML.load(ERB.new(File.read(path)).result).fetch(Rails.env.to_s)
         c.symbolize_keys!
 
         config.merge!(c)
