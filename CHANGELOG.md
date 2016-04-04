@@ -1,5 +1,10 @@
 
 #### [Current]
+ * 2016-02-03 [91b09b2](../../commit/91b09b2) - __(rubycrafter)__ parsing paperdist.yml by ERB
+ * 2015-09-25 [b5d0ff7](../../commit/b5d0ff7) - __(Andrew N. Shalaev)__ feat: покрытие тестами
+
+#### v2.0.1
+ * 2014-12-04 [0d2d6b9](../../commit/0d2d6b9) - __(bibendi)__ Release 2.0.1
  * 2014-12-04 [949981c](../../commit/949981c) - __(bibendi)__ generate public_url without URI.encode
 
 #### v2.0.0
