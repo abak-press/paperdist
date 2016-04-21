@@ -34,19 +34,4 @@ RSpec.describe Paperclip::Interpolations do
       end
     end
   end
-
-  describe '#extension' do
-    context 'when defined attachment format' do
-      let(:style) { double(Paperclip::Style, format: 'jpg') }
-      let(:attachment) { double(Paperclip::Attachment, styles: {big: style}) }
-
-      it { expect(described_class.send(:extension, attachment, :big)).to eq 'jpg' }
-    end
-
-    context 'when not defined format' do
-      let(:attachment) { double(Paperclip::Attachment, styles: {}, original_filename: 'foo.bar.jpg') }
-
-      it { expect(described_class.send(:extension, attachment, :big)).to eq 'jpg' }
-    end
-  end
 end

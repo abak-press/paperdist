@@ -12,13 +12,5 @@ module Paperclip
 
       [paperdist_url, attach_path].join('/')
     end
-
-    # Returns the extension of the file. e.g. "jpg" for "file.jpg"
-    # If the style has a format defined, it will return the format instead
-    # of the actual extension.
-    def extension(attachment, style_name)
-      ((style = attachment.styles[style_name.to_s.to_sym]) && style.format) ||
-        File.extname(attachment.original_filename)[1..-1]
-    end
   end
 end
