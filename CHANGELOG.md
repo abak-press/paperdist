@@ -1,5 +1,9 @@
 
 #### [Current]
+ * 2016-04-21 [063a9bd](../../commit/063a9bd) - __(Dmitry Bochkarev)__ fix: использование дефолтного определения расширения стиля
+
+#### v2.1.0
+ * 2016-04-04 [676bf4e](../../commit/676bf4e) - __(Andrew N. Shalaev)__ Release 2.1.0
  * 2016-02-03 [91b09b2](../../commit/91b09b2) - __(rubycrafter)__ parsing paperdist.yml by ERB
  * 2015-09-25 [b5d0ff7](../../commit/b5d0ff7) - __(Andrew N. Shalaev)__ feat: покрытие тестами
 
