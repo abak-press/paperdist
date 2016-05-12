@@ -14,6 +14,16 @@ RSpec.describe Paperclip::Interpolations do
       allow(ActionController::Base).to receive(:asset_host).and_return default_host
     end
 
+    context 'when zero node' do
+      let(:node) { 0 }
+
+      it 'constructs local path to attachment' do
+        expect(described_class.send(:public_url, attachment, :big)).to eq(
+          "#{default_host}/system/#{attachment_path}"
+        )
+      end
+    end
+
     context 'when prod' do
       let(:env) { :production }
 
