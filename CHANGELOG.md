@@ -1,5 +1,9 @@
 
 #### [Current]
+ * 2016-05-12 [dbe6f98](../../commit/dbe6f98) - __(Andrew N. Shalaev)__ fix: constructs url to system path for zero node
+
+#### v2.1.1
+ * 2016-04-29 [dd89fce](../../commit/dd89fce) - __(Simeon Movchan)__ Release 2.1.1
  * 2016-04-21 [063a9bd](../../commit/063a9bd) - __(Dmitry Bochkarev)__ fix: использование дефолтного определения расширения стиля
 
 #### v2.1.0
