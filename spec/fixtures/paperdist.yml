@@ -1,5 +1,5 @@
 development:
-  active_node: 0
+  active_node: 1
   webdav_server: 'http://foo%.localhost'
   public_server: 'http://st%.localhost'
 

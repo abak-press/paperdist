@@ -7,7 +7,7 @@ RSpec.describe Paperdist::Configuration do
     context 'when development env' do
       let(:env) { :development }
 
-      it { expect(configuration.active_node).to eq 0 }
+      it { expect(configuration.active_node).to eq 1 }
       it { expect(configuration.webdav_server).to eq 'http://foo%.localhost' }
       it { expect(configuration.public_server).to eq 'http://st%.localhost' }
     end

@@ -18,7 +18,7 @@ RSpec.describe Paperclip::Storage::Webdav do
       context 'when dev' do
         let(:env) { :development }
 
-        it 'constructs webdav server instance with valid url' do
+        it 'constructs webdav server instance with active node url' do
           expect(Paperclip::Storage::Webdav::Server).to receive(:new).with(url: 'http://foo32.localhost')
 
           attachment.send(:servers)
@@ -28,7 +28,7 @@ RSpec.describe Paperclip::Storage::Webdav do
       context 'when production' do
         let(:env) { :production }
 
-        it 'constructs webdav server instance with valid url' do
+        it 'constructs webdav server instance with active node url' do
           expect(Paperclip::Storage::Webdav::Server).to receive(:new).with(url: 'http://foo32.example.com')
 
           attachment.send(:servers)
@@ -42,8 +42,8 @@ RSpec.describe Paperclip::Storage::Webdav do
       context 'when dev' do
         let(:env) { :development }
 
-        it 'constructs webdav server instance with valid url from paperdist.yml' do
-          expect(Paperclip::Storage::Webdav::Server).to receive(:new).with(url: 'http://foo0.localhost')
+        it 'constructs webdav server instance with active node url from paperdist.yml' do
+          expect(Paperclip::Storage::Webdav::Server).to receive(:new).with(url: 'http://foo1.localhost')
 
           attachment.send(:servers)
         end
@@ -52,11 +52,42 @@ RSpec.describe Paperclip::Storage::Webdav do
       context 'when production' do
         let(:env) { :production }
 
-        it 'constructs webdav server instance with valid url from paperdist.yml' do
+        it 'constructs webdav server instance with active node url from paperdist.yml' do
           expect(Paperclip::Storage::Webdav::Server).to receive(:new).with(url: 'http://foo11.example.com')
 
           attachment.send(:servers)
         end
+      end
+    end
+  end
+
+  describe '#save' do
+    before do
+      allow(model).to receive(:update_column).with(:node, 1)
+      attachment.save
+    end
+
+    context 'when node is 0' do
+      let(:node) { 0 }
+
+      it 'updates node from 0 to currently active node' do
+        expect(model).to have_received(:update_column).with(:node, 1)
+      end
+    end
+
+    context 'when node is nil' do
+      let(:node) { nil }
+
+      it 'updates node from 0 to currently active node' do
+        expect(model).to have_received(:update_column).with(:node, 1)
+      end
+    end
+
+    context 'when node is neither 0 nor nil but some other fixnum' do
+      let(:node) { 1 }
+
+      it 'updates node from 0 to currently active node' do
+        expect(model).to_not have_received(:update_column).with(:node, 1)
       end
     end
   end

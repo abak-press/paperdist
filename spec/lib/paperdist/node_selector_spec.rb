@@ -5,7 +5,7 @@ RSpec.describe Paperdist::NodeSelector do
     context 'when dev' do
       let(:env) { :development }
 
-      it { expect(described_class.get_node).to eq 0 }
+      it { expect(described_class.get_node).to eq 1 }
     end
 
     context 'when prod' do
