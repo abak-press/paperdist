@@ -5,6 +5,7 @@ require 'bundler/setup'
 require 'simplecov'
 SimpleCov.start do
   minimum_coverage 95
+  add_filter 'lib/paperdist/engine.rb'
 end
 
 require 'active_support/core_ext/hash/deep_merge'
