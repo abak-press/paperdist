@@ -1,5 +1,9 @@
 
 #### [Current]
+ * 2016-07-26 [519623b](../../commit/519623b) - __(Pavel Galkin)__ fix: use active node if instance.node is 0 or nil
+
+#### v2.2.0
+ * 2016-07-04 [5a80760](../../commit/5a80760) - __(Andrew N. Shalaev)__ Release 2.2.0
  * 2016-05-12 [dbe6f98](../../commit/dbe6f98) - __(Andrew N. Shalaev)__ fix: constructs url to system path for zero node
 
 #### v2.1.1
