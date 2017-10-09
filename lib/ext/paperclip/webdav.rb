@@ -1,4 +1,3 @@
-# coding: utf-8
 require 'paperclip/storage/webdav'
 
 module Paperclip
@@ -16,6 +15,8 @@ module Paperclip
       end
 
       def after_flush_writes
+        super
+
         instance.update_column(:node, Paperdist.config.active_node) if instance.node.to_i == 0
       end
     end
