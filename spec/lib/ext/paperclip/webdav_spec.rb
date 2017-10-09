@@ -64,6 +64,9 @@ RSpec.describe Paperclip::Storage::Webdav do
   describe '#save' do
     before do
       allow(model).to receive(:update_column).with(:node, 1)
+
+      expect(attachment).to receive(:unlink_files).and_call_original
+
       attachment.save
     end
 
