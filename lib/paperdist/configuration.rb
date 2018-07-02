@@ -6,10 +6,20 @@ module Paperdist
   class Configuration
     include ActiveSupport::Configurable
     config_accessor :active_node, :webdav_server, :public_server
+    attr_accessor :active_node_producer
 
     def initialize(*paths)
       paths.each { |p| load(p) }
     end
+
+    module Overriding
+      def active_node
+        return super unless active_node_producer
+        Integer(active_node_producer.call)
+      end
+    end
+
+    prepend Overriding
 
     private
     def load(path)
