@@ -1,6 +1,11 @@
+# v2.3.1
+
+* 2018-07-03 [5b53208](../../commit/5b53208) - __(korotaev)__ Release 2.3.1 
+* 2018-07-03 [5c98562](../../commit/5c98562) - __(korotaev)__ fix: initialize config before load_init_rb 
+https://jira.railsc.ru/browse/SERVICES-932
+
 # v2.3.0
 
-* 2018-07-03 [a9ca527](../../commit/a9ca527) - __(korotaev)__ Release 2.3.0 
 * 2018-07-02 [07c76b0](../../commit/07c76b0) - __(korotaev)__ feat(configuration): add dynamicaly node reading 
 https://jira.railsc.ru/browse/SERVICES-932
 
