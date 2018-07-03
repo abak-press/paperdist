@@ -1,6 +1,11 @@
+# v2.3.0
+
+* 2018-07-03 [a9ca527](../../commit/a9ca527) - __(korotaev)__ Release 2.3.0 
+* 2018-07-02 [07c76b0](../../commit/07c76b0) - __(korotaev)__ feat(configuration): add dynamicaly node reading 
+https://jira.railsc.ru/browse/SERVICES-932
+
 # v2.2.2
 
-* 2017-10-09 [3e674de](../../commit/3e674de) - __(Simeon Movchan)__ Release 2.2.2 
 * 2017-10-09 [7bc0567](../../commit/7bc0567) - __(Simeon Movchan)__ fix: очистка временных файлов для webdav 
 https://jira.railsc.ru/browse/SERVICES-1522
 
