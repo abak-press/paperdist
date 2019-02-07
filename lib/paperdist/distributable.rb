@@ -5,7 +5,7 @@ module Paperdist
     extend ActiveSupport::Concern
 
     included do
-      before_create { |r| r.node = ::Paperdist::NodeSelector.get_node }
+      before_create -> { self.node = ::Paperdist::NodeSelector.get_node }, unless: :node_changed?
     end
   end
 end
