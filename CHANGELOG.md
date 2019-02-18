@@ -1,6 +1,14 @@
+# v2.4.0
+
+* 2019-02-15 [e3db2b3](../../commit/e3db2b3) - __(TamarinEA)__ Release 2.4.0 
+* 2019-02-07 [8bd5faa](../../commit/8bd5faa) - __(TamarinEA)__ feature: do not overwrite changed node on create 
+https://jira.railsc.ru/browse/GOODS-1644
+
+* 2019-02-07 [d5d7eac](../../commit/d5d7eac) - __(TamarinEA)__ chore: lock nokogiri for old ruby 
+* 2019-02-07 [b26555e](../../commit/b26555e) - __(TamarinEA)__ chore: run specs for rails 4.1 and 4.2 
+
 # v2.3.1
 
-* 2018-07-03 [5b53208](../../commit/5b53208) - __(korotaev)__ Release 2.3.1 
 * 2018-07-03 [5c98562](../../commit/5c98562) - __(korotaev)__ fix: initialize config before load_init_rb 
 https://jira.railsc.ru/browse/SERVICES-932
 
