@@ -1,6 +1,10 @@
+# v2.4.1
+
+* 2021-08-06 [2388bee](../../commit/2388bee) - __(TamarinEA)__ Release 2.4.1 
+* 2021-08-06 [025f60b](../../commit/025f60b) - __(TamarinEA)__ chore: add ruby 2.4 support 
+
 # v2.4.0
 
-* 2019-02-15 [e3db2b3](../../commit/e3db2b3) - __(TamarinEA)__ Release 2.4.0 
 * 2019-02-07 [8bd5faa](../../commit/8bd5faa) - __(TamarinEA)__ feature: do not overwrite changed node on create 
 https://jira.railsc.ru/browse/GOODS-1644
 
